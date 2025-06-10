@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+  <persistence-unit name="lojaPU">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>model.Usuario</class>
+    <class>model.Produto</class>
+    <class>model.Pessoa</class>
+    <class>model.PessoaFisica</class>
+    <class>model.PessoaJuridica</class>
+    <class>model.Compra</class>
+    <class>model.Venda</class>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.url"    value="jdbc:sqlserver://localhost:1433;databaseName=SistemaLoja"/>
+      <property name="javax.persistence.jdbc.user"   value="loja"/>
+      <property name="javax.persistence.jdbc.password" value="loja"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+    </properties>
+  </persistence-unit>
+</persistence>
